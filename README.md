@@ -22,7 +22,7 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/bvfr/Weather-Dashboard
 cd weatherApp/weather
 ```
 
@@ -75,7 +75,6 @@ The application will open in your browser at `http://localhost:3000`.
 ├── server/                 # Backend Express server
 │   ├── server.js           # API routes and MeteoSource integration
 │   ├── package.json        # Server dependencies
-│   └── .env               # Server environment variables (API key)
 └── public/                 # Static assets
 ```
 
@@ -130,12 +129,6 @@ npm start -- --reset-cache
 rm -rf node_modules package-lock.json
 npm install
 ```
-
-## Environment Variables
-
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `REACT_APP_METEOSOURCE_API_KEY` | Your MeteoSource API key | Yes |
 
 ## Contributing
 
