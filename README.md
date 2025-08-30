@@ -4,12 +4,11 @@ A React-based weather application that displays current weather conditions and f
 
 ## Features
 
-- 🔍 City search with autocomplete suggestions
-- 🌡️ Current weather conditions (temperature, feels like, humidity)
-- ⏰ 12-hour hourly forecast
-- 📅 5-day daily forecast
-- 🌍 Temperature displayed in Fahrenheit
-- 🔐 No API key required for users (handled server-side)
+- City search with autocomplete suggestions
+- Current weather conditions (temperature, feels like, humidity)
+- 12-hour hourly forecast
+- 5-day daily forecast
+- Temperature displayed in Fahrenheit
 
 ## Prerequisites
 
@@ -77,66 +76,6 @@ The application will open in your browser at `http://localhost:3000`.
 │   ├── package.json        # Server dependencies
 └── public/                 # Static assets
 ```
-
-## Development
-
-### Running Both Frontend and Backend
-
-You need to run both the backend server and frontend simultaneously:
-
-1. **Terminal 1 (Backend)**:
-```bash
-cd server
-npm run dev  # Uses nodemon for auto-restart
-```
-
-2. **Terminal 2 (Frontend)**:
-```bash
-npm start
-```
-
-### API Endpoints
-
-The backend provides these endpoints:
-- `GET /api/search/:city` - Search for cities
-- `GET /api/weather/:placeId` - Get weather data for a place
-
-## Deployment
-
-For production deployment:
-1. Deploy the backend server to a hosting service (Heroku, Railway, etc.)
-2. Update the frontend API URLs to point to your deployed backend
-3. Deploy the frontend to a static hosting service (Netlify, Vercel, etc.)
-
-## Troubleshooting
-
-### Backend Server Issues
-- Ensure the server is running on port 5000
-- Check server logs for API errors
-- Verify the MeteoSource API key is valid in `server/.env`
-
-### Frontend Connection Issues
-- Ensure backend server is running first
-- Check that frontend is calling `http://localhost:5000`
-- Verify no CORS errors in browser console
-
-### Development Server Issues
-```bash
-# Clear npm cache
-npm start -- --reset-cache
-
-# Or reinstall dependencies
-rm -rf node_modules package-lock.json
-npm install
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## License
 
